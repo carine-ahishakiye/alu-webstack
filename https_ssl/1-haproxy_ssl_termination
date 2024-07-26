@@ -33,22 +33,22 @@ defaults
         errorfile 503 /etc/haproxy/errors/503.http
         errorfile 504 /etc/haproxy/errors/504.http
 
-frontend carineumugabe-frontend
+frontend carine03-frontend
         bind *:80
         mode http
         http-request redirect scheme https code 301 unless { ssl_fc }
         http-request set-header X_Forwarded-Proto http
         default_backend carineumugabe-backend
 
-frontend carineumugabe-frontend-https
-        bind *:443 ssl crt /etc/haproxy/certs/www.carineumugabe.tech.pem
+frontend carine03-frontend-https
+        bind *:443 ssl crt /etc/haproxy/certs/www.carine03.tech.pem
         http-request set-header X-Forwarded-Proto https
         default_backend carineumugabe-backend
 
-backend carineumugabe-backend
+backend carine03-backend
         balance roundrobin
-        server 6074-web-01 44.220.131.227:80 check
-        server 6074-web-02 50.19.26.220:80 check
+        server 6176-web-01 54.234.95.85:80 check
+        server 6176-web-02 50.19.26.220:80 check
 
 
     #server 6176-web-01 54.234.95.85:80 check
