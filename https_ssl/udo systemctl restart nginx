@@ -1,0 +1,24 @@
+[0;1;32m●[0m nginx.service - A high performance web server and a reverse proxy server
+     Loaded: loaded (/lib/systemd/system/nginx.service; enabled; vendor preset: enabled)
+     Active: [0;1;32mactive (running)[0m since Thu 2024-07-25 07:21:33 UTC; 1 day 2h ago
+       Docs: man:nginx(8)
+    Process: 134733 ExecStartPre=/usr/sbin/nginx -t -q -g daemon on; master_process on; (code=exited, status=0/SUCCESS)
+    Process: 134734 ExecStart=/usr/sbin/nginx -g daemon on; master_process on; (code=exited, status=0/SUCCESS)
+    Process: 135208 ExecReload=/usr/sbin/nginx -g daemon on; master_process on; -s reload (code=exited, status=0/SUCCESS)
+   Main PID: 134735 (nginx)
+      Tasks: 2 (limit: 1145)
+     Memory: 3.3M
+     CGroup: /system.slice/nginx.service
+             ├─134735 nginx: master process /usr/sbin/nginx -g daemon on; master_process on;
+             └─135209 nginx: worker process
+
+Jul 25 08:15:10 6176-web-01 systemd[1]: Reloading A high performance web server and a reverse proxy server.
+Jul 25 08:15:10 6176-web-01 systemd[1]: Reloaded A high performance web server and a reverse proxy server.
+Jul 25 08:22:25 6176-web-01 systemd[1]: Reloading A high performance web server and a reverse proxy server.
+Jul 25 08:22:25 6176-web-01 systemd[1]: Reloaded A high performance web server and a reverse proxy server.
+Jul 25 08:32:39 6176-web-01 systemd[1]: Reloading A high performance web server and a reverse proxy server.
+Jul 25 08:32:40 6176-web-01 systemd[1]: Reloaded A high performance web server and a reverse proxy server.
+Jul 25 08:36:00 6176-web-01 systemd[1]: Reloading A high performance web server and a reverse proxy server.
+Jul 25 08:36:00 6176-web-01 systemd[1]: Reloaded A high performance web server and a reverse proxy server.
+Jul 25 08:38:06 6176-web-01 systemd[1]: Reloading A high performance web server and a reverse proxy server.
+Jul 25 08:38:06 6176-web-01 systemd[1]: Reloaded A high performance web server and a reverse proxy server.
